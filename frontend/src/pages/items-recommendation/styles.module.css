@@ -1,0 +1,22 @@
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin: 16px;
+    gap: 16px;
+}
+
+.title {
+    text-align: center;
+    font-size: 18px;
+}
+
+.graph {
+    background-image: url(../../../public/assets/graph.png);
+    background-size: cover;
+    width: 100%;
+    aspect-ratio: 1.45;
+}

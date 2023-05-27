@@ -1,9 +1,10 @@
-import { createBrowserRouter } from "react-router-dom";
+import { createBrowserRouter, Navigate } from "react-router-dom";
 import { Login } from "./pages/login";
 import { Register } from "./pages/register";
 import { Items } from "./pages/items";
 import { Merchants } from "./pages/merchants";
 import { MerchantProducts } from "./pages/merchant-products";
+import { ItemsRecommendation } from "./pages/items-recommendation";
 
 export const router = createBrowserRouter([
     {
@@ -13,6 +14,10 @@ export const router = createBrowserRouter([
     {
       path: "/register",
       Component: () => <Register />,
+    },
+    {
+      path: "/items/recomendacao",
+      Component: () => <ItemsRecommendation />,
     },
     {
       path: "/items",
@@ -28,7 +33,7 @@ export const router = createBrowserRouter([
     },
     {
       path: "/",
-      Component: () => <div />,
+      Component: () => <Navigate to='/login' />,
     },
 ]);
 

@@ -36,12 +36,14 @@ export const merchant1: Merchant = {
     id: 1,
     name: 'Liquidamais',
     products: [],
+    productsRecommendation: [],
 };
 
 export const merchant2: Merchant = {
     id: 2,
     name: 'Mercado do zé',
     products: [],
+    productsRecommendation: [],
 };
 
 export const product1: Product = {
@@ -68,5 +70,22 @@ export const product3: Product = {
     merchant: merchant2
 };
 
+export const product4: Product = {
+    id: 4,
+    fullPrice: 10,
+    discountPercentage: 0.4,
+    item: item5,
+    merchant: merchant1
+};
+
+export const product5: Product = {
+    id: 5,
+    fullPrice: 7,
+    discountPercentage: 0.4,
+    item: item4,
+    merchant: merchant1
+};
+
 merchant1.products.push(product1, product2);
 merchant2.products.push(product3);
+merchant1.productsRecommendation.push(product4, product5);

@@ -5,6 +5,7 @@ export interface Merchant {
     id: number;
     name: string;
     products: Product[];
+    productsRecommendation: Product[];
 }
 
 export const merchants = [merchant1, merchant2]
