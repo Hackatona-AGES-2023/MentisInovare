@@ -1,6 +1,20 @@
 
 .container {
-    padding: 8px;
+    display: flex;
     border-radius: 10px;
     border: 2px solid black;
+    overflow: hidden;
+}
+
+.container > input {
+    padding: 8px;
+    width: 100%;
+    border: none;
+    outline: none;
+}
+
+.startAdornment {
+    display: flex;
+    padding-left: 8px;
+    align-items: center;
 }
