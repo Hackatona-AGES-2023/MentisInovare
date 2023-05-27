@@ -1,0 +1,23 @@
+
+.container {
+    display: flex;
+    flex-direction: column;
+    margin: 16px;
+    gap: 16px;
+}
+
+.title {
+    text-align: center;
+    font-size: 18px;
+}
+
+.title {
+    text-align: center;
+    font-size: 18px;
+}
+
+.divider {
+    height: 1px;
+    background: black;
+    margin: 16px 0px;
+}

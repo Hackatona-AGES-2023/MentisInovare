@@ -8,8 +8,17 @@ export interface WishItemProps {
     onChange?: (selected: boolean) => void;
 }
 
-export const WishItem = () => {
+export const WishItem = ({
+    imageUrl,
+    label,
+    selected,
+    onChange
+}: WishItemProps) => {
     return <div className={styles.container}>
-        <Select />
+        <div className={styles.left}>
+            <div className={styles.img} style={{ backgroundImage: `url(${imageUrl})` }} />
+            <div className={styles.name}>{label}</div>
+        </div>
+        <Select value={selected} onChange={onChange} />
     </div>
 };

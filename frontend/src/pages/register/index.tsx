@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { Button } from '../../components/button';
 import { Logo } from '../../components/logo';
 import { TextInput } from '../../components/text-input';
@@ -8,6 +8,7 @@ import styles from './styles.module.css'
 export const Register = () => {
     const [email, setEmail] = useState<string>()
     const [password, setPassword] = useState<string>()
+    const navigate = useNavigate()
 
     return <div className={styles.container}>
         <Logo></Logo>
@@ -16,7 +17,7 @@ export const Register = () => {
             <TextInput type='password' value={password} onChange={setPassword} placeholder='Senha' />
         </div>
         <div className={styles.bottom}>
-            <Button>CADASTRAR</Button>
+            <Button onClick={() => navigate('/items')}>CADASTRAR</Button>
             <div>Possui conta? <Link to={{ pathname: '/login' }}>Logue aqui</Link></div>
         </div>
     </div>;

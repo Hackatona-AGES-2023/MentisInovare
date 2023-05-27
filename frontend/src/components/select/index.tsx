@@ -9,7 +9,9 @@ export const Select = ({
     value,
     onChange
 }: SelectProps) => {
-    return <div className={styles.container}>
-        
-    </div>;
+    return <div
+        onClick={() => onChange?.(!value)}
+        className={styles.container}
+        style={{ background: value ? '#55EB48' : undefined }}
+    />;
 };

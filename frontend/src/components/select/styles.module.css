@@ -1,9 +1,9 @@
 
 .container {
-    min-width: 32px;
-    min-height: 32px;
-    width: 32px;
-    height: 32px;
-    border: 1px solid red;
+    min-width: 24px;
+    min-height: 24px;
+    width: 24px;
+    height: 24px;
+    border: 4px solid #55EB48;
     border-radius: 50%;
 }
